@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to Kokoa Talk</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <!--column은 너무 흔해서 css 읽을 때 어떤 column을 가리키는지 알기 어려움 -->
+        <span>No Service</span>
+        <i class="fa-solid fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>18:43</span>
+      </div>
+      <div class="status-bar__column">
+        <span>110%</span>
+        <i class="fa-solid fa-battery-three-quarters"></i>
+        <i class="fa-solid fa-bolt"></i>
+      </div>
+    </div>
+
+    <header class="welcome-header">
+      <h1 class="welcome-header__title">Welcome to Kokoa Clone</h1>
+      <p class="welcome-header__text">
+        If you have a Kokoa Account, lon in with your email or phone number.
+      </p>
+    </header>
+
+    <form action="friends.html" method="get" id="login-form">
+      <input name="username" type="text" placeholder="Email or phone numer" />
+      <input name="password" type="password" placeholder="password" />
+      <input type="submit" value="Log In" />
+      <a href="#">Find kokoa Account or Password</a>
+    </form>
+
+    <script
+      src="https://kit.fontawesome.com/cb28b1a69e.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+  <!--스크립트는 항상 마지막에! body 태그 닫기 직전-->
+</html>

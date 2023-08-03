@@ -1,0 +1,64 @@
+.welcome-header {
+    margin: 90px 0px;
+    text-align: center; /* display:flex;를 쓸 수도 있지만 h1과 p같은 텍스트를 다루기 때문에*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.welcome-header__title {
+    margin-bottom: 20px;
+    font-size: 25px;
+    
+}
+
+.welcome-header__text {
+    width: 60%;
+    opacity: 0.6; 
+    
+}
+
+#login-form {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 30px;
+}
+
+#login-form input {  /*id=log-in의 모든 input*/
+    padding: 15px 0px;
+    border: none;
+    font-size: 17px;
+    margin-bottom: 25px;
+
+}
+
+#login-form input:not([type="submit"]) {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2); /* 블랙컬러, opacity 0.3 */
+    transition: border-color 0.3s ease-in-out;
+}
+
+#login-form input::placeholder {
+    color: rgba(0, 0, 0, 0.4);
+
+}
+
+#login-form input:focus {
+    border-color: var(--yellow);
+}
+
+#login-form input[type="submit"] {
+    background-color: var(--yellow);
+    cursor:pointer;
+    padding: 20px 0px;
+    border-radius: 5px;
+}
+
+#login-form a{
+    text-align: center;
+    text-decoration: none;
+    /*모든 링크는 기본값으로 blue 색상 적용 -> 색깔을 바꿔보자! */
+    color:inherit; /*inherit(상속) 부모로부터 색을 상속받는 것 / a가 아버지로부터 상속받음 */
+    font-size: 13px;
+    
+
+}

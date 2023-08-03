@@ -1,0 +1,49 @@
+.nav {
+    position: fixed; /*위치 고정 !! */
+    bottom:0;
+    width: 100%; /*bottom:0 하고나니깐 width가 없어져서 설정 */
+    background-color:#f9f9fa;
+    padding: 20px 50px;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(0,0,0,0.3);
+}
+
+.nav__list {
+    display:flex;
+    justify-content: space-between;
+    
+}
+
+.nav__link {
+    color:#2e3633;
+    position:relative;
+}
+
+.nav__notification {
+    background-color: tomato;
+    width: 25px;
+    height: 25px; /*span에는 안먹힘 .. 그래서 display: block 해줘야함 */
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 500;
+    position: absolute;  /* 숫자가 아이콘 위로 올라옴 */
+    /* position: absolute를 쓰기 위한 조건은? 
+    nav__notification을 감싸고 있는 container에 position: relative */
+    left: 17px;
+    bottom: 15px;
+
+}
+
+
+.nav__new { /*내가 작성 */
+    background-color: tomato;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    position: absolute;
+    right: -10px;
+    bottom: 26px;
+}
