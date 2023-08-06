@@ -12,12 +12,14 @@
     color: rgba(0,0,0,0.3);
 }
 
+.friends-screen__birthday,
 .friends-screen__channel {
     margin-top: 25px;
     border-top: var(--main-border);
     padding-top: 15px;
 }
 
+.friends-screen__birthday-header,
 .friends-screen__channel-header {
     margin-bottom: 20px;
     display: flex;
@@ -50,3 +52,41 @@
     animation: hideSplachScreen 0.6s ease-in-out forwards; /*forwards: 마지막 속성 유지*/
     animation-delay: 1s;
 }
+
+.user-component .gift-shop span {
+    border:1.5px solid tomato;
+    border-radius: 30px;
+    width: 100px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    
+}
+
+.user-component__gift i {
+    color: tomato;
+    margin-left: 5px;
+}
+
+.user-component__column .user-component__birth {
+    background-color: gold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-component__column .user-component__birth i {
+    
+}
+
+.friends-screen__birthday .user-component {
+    margin-bottom: 20px;
+}
+
+.user-component__text h6 {
+    font-weight: 400;
+    font-size: 17px;
+}
+
