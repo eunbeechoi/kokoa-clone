@@ -20,15 +20,7 @@
 }
 
 .nav__notification {
-    background-color: tomato;
-    width: 25px;
-    height: 25px; /*span에는 안먹힘 .. 그래서 display: block 해줘야함 */
-    border-radius: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-weight: 500;
+
     position: absolute;  /* 숫자가 아이콘 위로 올라옴 */
     /* position: absolute를 쓰기 위한 조건은? 
     nav__notification을 감싸고 있는 container에 position: relative */

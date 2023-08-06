@@ -8,19 +8,37 @@
 @import "components/nav-bar.css";
 @import "components/screen-header.css";
 @import "components/user-component.css";
+@import "components/badge.css";
 
 /*Screens*/
 @import "screens/login.css";
 @import "screens/friends.css";
-
+@import "screens/find.css";
 
 
 
 body {
     color:#2e3633;
     font-family: 'Roboto', sans-serif;
+    height: 150vh;
 
 
 }
 
+.main-screen {
+    padding: 0px var(--horizonal-space);
+}
 
+.open-post__heart-count {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 5px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+}
+
+.open-post__heart-count span {
+    margin-left: 5px;
+}
