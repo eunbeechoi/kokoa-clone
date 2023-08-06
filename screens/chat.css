@@ -1,7 +1,7 @@
 
 #chat-screen {
     background-color: #abc1d1;
-    height:1100vh;
+    height:500vh;
 }
 
 #chat-screen .alt-header,
@@ -24,11 +24,24 @@
     z-index: 1;
 }
 
+@keyframes fadeIn {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: none;
+        opacity: 1;
+    }
+    
+}
+
 .main-chat {
-    margin-top: 100px;
+    margin-top: 110px;
     display: flex;  /* 이거하면 왜 회색 박스 크기가 작아지는거지...? */
     flex-direction: column;
     align-items: center;
+    animation: fadeIn 0.5s linear;
 
 }
 
@@ -118,6 +131,7 @@
     padding: 5px 25px;
     align-items: center;
     box-sizing: border-box;
+    transition: all .3s ease-in-out;
 }
 
 .reply i {
@@ -137,6 +151,8 @@
     width: 100%;
     border: var(--main-border);
     border-radius: 20px;
+    box-sizing: border-box;
+    transition: all .3s ease-in-out;
 }
 
 /*.reply__column에 width를 줘야 input에 width를 줄 수 있음 */
@@ -170,4 +186,28 @@
 .reply__column button:active {
     outline: none;
 
+}
+
+.reply .reply__column:first-child,  /*reply 내부에 어떤 element가 focus 되어있으면 이란 뜻 */
+.reply .fa-face-smile-wink,
+.reply button {
+    transition: opasity .3s ease-in-out;
+    
+}
+
+
+.reply:focus-within .reply__column:first-child,  /*reply 내부에 어떤 element가 focus 되어있으면 이란 뜻 */
+.reply:focus-within .fa-face-smile-wink,
+.reply:focus-within button {
+    opacity: 0;
+}
+
+.reply input:focus {
+    width: 98vw;
+    transform: translateX(-10%) translateY(-80px);
+
+}
+
+.reply:focus-within {
+    transform: translateY(80px);
 }
